@@ -30,5 +30,4 @@ for i in range(len(original)):
     total += value
 rmse = math.sqrt(1 / len(original) * (math.pow(total, 2)))
 print("The Root Mean Squared Error (RMSE) of mrjob program is", rmse)
-print("The RMSE of mrjob program is less than the original C++ program. The original C++ program has RMSE of 0.126623377351751 ")
 
