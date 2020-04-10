@@ -26,8 +26,8 @@ for line in file:
 for i in range(len(original)):
     val_o = (original[i])
     val_p = (pred[i])
-    value = val_o - val_p
+    value = math.pow((val_o - val_p),2)
     total += value
-rmse = math.sqrt(1 / len(original) * (math.pow(total, 2)))
+rmse = math.sqrt(1 / len(original) * total)
 print("The Root Mean Squared Error (RMSE) of mrjob program is", rmse)
 
